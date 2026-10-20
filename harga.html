@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#f2f2f7">
 <title>Harga Motor &amp; Promo — Daya Motor Cibiru</title>
 <meta name="description" content="Daftar harga OTR motor Honda cash dan kredit di Daya Motor Cibiru, termasuk voucher khusus BeAT series.">
-<link rel="canonical" href="https://simulasibandung.netlify.app/harga">
+<link rel="canonical" href="https://stupendous-kheer-a92a01.netlify.app/harga">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -14,18 +14,15 @@
 <meta property="og:site_name" content="Daya Motor Cibiru">
 <meta property="og:title" content="Harga Motor &amp; Promo — Daya Motor Cibiru">
 <meta property="og:description" content="Daftar harga OTR motor Honda cash dan kredit di Daya Motor Cibiru, termasuk voucher khusus BeAT series.">
-<meta property="og:url" content="https://simulasibandung.netlify.app/harga">
-<meta property="og:image" content="https://simulasibandung.netlify.app/og-image.png">
+<meta property="og:url" content="https://stupendous-kheer-a92a01.netlify.app/harga">
+<meta property="og:image" content="https://stupendous-kheer-a92a01.netlify.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="id_ID">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Harga Motor &amp; Promo — Daya Motor Cibiru">
 <meta name="twitter:description" content="Daftar harga OTR motor Honda cash dan kredit di Daya Motor Cibiru, termasuk voucher khusus BeAT series.">
-<meta name="twitter:image" content="https://simulasibandung.netlify.app/og-image.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="twitter:image" content="https://stupendous-kheer-a92a01.netlify.app/og-image.png">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -48,23 +45,21 @@
 <main id="konten" class="wrap" tabindex="-1">
   <div class="nav">
     <a class="back" href="/" aria-label="Kembali ke Home"><svg aria-hidden="true"><use href="#i-back"/></svg>Kembali</a>
-    <a class="wa-pill" data-wa href="https://wa.me/6285155070692" target="_blank" rel="noopener" aria-label="Chat WhatsApp Dion (buka di tab baru)"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
   </div>
   <h1 class="page-title">Harga Motor</h1>
   <p class="page-sub">Pilih Cash atau Kredit. Voucher khusus BeAT series.</p>
 
   <div class="step">
-    <div class="seg dua" id="hargaMode" role="group" aria-label="Metode pembayaran">
+    <div class="seg dua" id="hargaMode" role="group" aria-label="Cash atau Kredit">
       <button type="button" data-mode="cash" aria-pressed="true">Cash</button>
       <button type="button" data-mode="kredit" aria-pressed="false">Kredit</button>
     </div>
     <div class="seg" id="hargaTabs" role="group" aria-label="Kategori motor" style="margin-bottom:0"></div>
   </div>
-  <p class="disclaimer" id="hargaDisclaimer" style="margin:10px 4px 0" hidden>Hasil simulasi bersifat estimasi dan bukan penawaran resmi. Angka final ditentukan oleh leasing.</p>
+  <p class="disclaimer" id="hargaDisclaimer" style="margin:10px 4px 0" hidden>Estimasi, bukan penawaran resmi. Angka final ditentukan leasing.</p>
 
   <div class="hlist" id="hargaList"></div>
 
-  <p class="cta-note">Hubungi Dion via WhatsApp untuk info cicilan dan pengecekan awal.</p>
   <p class="catatan">
     Harga OTR &amp; cicilan sesuai pricelist FIFGROUP Bandung Raya, Oktober 2026.<br>
     Harga &amp; ketentuan dapat berubah sewaktu-waktu.
@@ -73,9 +68,9 @@
 
 <footer class="footer">
   Daya Motor Cibiru · Dion Prayoga<br>
-  WhatsApp: <a data-wa href="https://wa.me/6285155070692" target="_blank" rel="noopener">0851-5507-0692</a><br>
+  WhatsApp 0851-5507-0692<br>
   Harga &amp; ketentuan dapat berubah sewaktu-waktu.<br>
-  <a href="/bi-checking">Cek BI Checking / SLIK OJK</a> <span class="sep" aria-hidden="true">·</span> <a href="/privacy">Kebijakan Privasi</a>
+  <a href="/simulasi#bi-checking">Cek BI Checking</a> <span class="sep" aria-hidden="true">·</span> <a href="/privacy">Kebijakan Privasi</a>
 </footer>
 
 <a class="wa-float" data-wa href="https://wa.me/6285155070692" target="_blank" rel="noopener" aria-label="Chat WhatsApp Dion (buka di tab baru)"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
@@ -198,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
       card.appendChild(chips);
     }
     if (beat) {
-      voucher = el('button', 'voucher', kredit ? 'Pakai Voucher DP 700rb (Tenor 35 bulan)' : 'Pakai Voucher Diskon 500rb');
+      voucher = el('button', 'voucher', kredit ? 'Pakai Voucher DP 700rb' : 'Pakai Voucher 500rb');
       voucher.type = 'button';
       voucher.addEventListener('click', function() {
         if (kredit) u.dpPromo = !u.dpPromo; else u.diskon = !u.diskon;
@@ -206,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       card.appendChild(voucher);
       if (kredit) {
-        ket = el('p', 'hnote', 'Voucher hanya untuk tenor 35 bulan');
+        ket = el('p', 'hnote', 'Voucher DP hanya untuk tenor 35 bulan.');
         ket.id = 'ket-' + nama.replace(/\W+/g, '-');
         voucher.setAttribute('aria-describedby', ket.id);
         card.appendChild(ket);
@@ -242,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
           area.appendChild(el('strong', '', formatRupiah(otr)));
         }
-        note.textContent = beat ? '' : 'Belum termasuk diskon — hubungi sales untuk promo terupdate.';
+        note.textContent = beat ? '' : 'Belum termasuk diskon, hubungi sales.';
         pesan = "Halo Dion Prayoga, saya mau tanya harga cash di Daya Motor Cibiru:\n" +
           "Model: " + nama + "\n" +
           (aktif
@@ -271,8 +266,8 @@ document.addEventListener('DOMContentLoaded', function() {
           ul.appendChild(li);
         });
         area.appendChild(ul);
-        if (aktif) area.appendChild(el('p', 'disclaimer', 'DP promo Rp700.000 khusus tenor 35 bulan. Estimasi, bukan penawaran resmi.'));
-        note.textContent = aktif || bisaPromo ? '' : 'Belum termasuk promo DP — hubungi sales untuk promo terupdate.';
+        if (aktif) area.appendChild(el('p', 'disclaimer', 'Estimasi, bukan penawaran resmi.'));
+        note.textContent = beat ? '' : 'DP normal. Hubungi sales untuk promo.';
         pesan = "Halo Dion Prayoga, saya tertarik kredit motor di Daya Motor Cibiru:\n" +
           "Model: " + nama + "\n" +
           "Harga OTR: " + formatRupiah(otr) + "\n" +
