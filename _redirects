@@ -1,0 +1,8 @@
+# URL lama: jangan 404
+/kredit          /simulasi                 301
+/bi-checking     /simulasi?cek=bi-checking 301
+
+# URL bersih (rewrite)
+/simulasi        /index.html               200
+/harga           /harga.html               200
+/privacy         /privacy.html             200
