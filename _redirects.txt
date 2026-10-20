@@ -1,0 +1,7 @@
+/harga.html      /harga        301
+/privacy.html    /privacy      301
+/kredit          /simulasi     301
+/simulasi        /index.html   200
+/bi-checking     /index.html   200
+/harga           /harga.html   200
+/privacy         /privacy.html 200
